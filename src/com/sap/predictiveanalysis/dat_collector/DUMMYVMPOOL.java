@@ -10,11 +10,11 @@ public class DUMMYVMPOOL extends VMpooldescriptor implements VMpoolgenerator
 public double dummyGen(int t)
 { 
 	{Random r=new Random();
-       int Amplitude=10+r.nextInt(90);
-       int phase=10+r.nextInt(90);
-       int omega=10+r.nextInt(90);
-	double k=Math.abs(Amplitude*(Math.sin(omega*t+phase)));
-	return(k);
+       int Amplitude=10+r.nextInt(90);  //Amplitude of the generated wave
+       int phase=10+r.nextInt(90);  // phase of the generated wave
+       int omega=10+r.nextInt(90);    //
+	double cpu_load=Math.abs(Amplitude*(Math.sin(omega*t+phase)));
+	return(cpu_load);
 	}
 }
 

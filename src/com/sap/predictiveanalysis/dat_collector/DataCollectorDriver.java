@@ -17,10 +17,13 @@ public class DataCollectorDriver extends Thread{
 	        
 	 }
 	
-	//    @overrided method
+	//  @ Override method
 	
 	public void run(){  
+		
+		//to pass the vm id's and the cpu_load to algorithm
 		HashMap<Integer, Double[]> hmap = new HashMap<Integer, Double[]>();
+		
 		int count;
 		 VMpooldescriptor vm=new VMpooldescriptor();
 	    	count=vm.getNumberOfVM();
